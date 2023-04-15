@@ -16,6 +16,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+/*CSS used to style the fizzbuzz pattern.*/
 .fizzBuzzLayout {
     padding: 0;
     text-align: center;
@@ -23,6 +24,7 @@ body {
     font-weight: 400;
     margin-top: 10px;
 }
+/*CSS used to style the github link.*/
 .link-style {
     display: block;
     font-size: 30px;
@@ -30,6 +32,7 @@ body {
     transition: 0.5s;
     margin: auto;
 }
+/*CSS used to animate the github link.*/
 .link-style:hover {
     transform: translateY(-5px);
     color: #000000;

@@ -4,5 +4,14 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Created by Awie van der Merwe</p>
+    <a class="link-style" href="https://github.com/AwievdM99/FizzBuzz"><i class="fa-brands fa-square-github"></i></i></a>
+    <div>
+        @foreach (var calculation in ViewData["fizzBuzz"] as IList<string>)
+        {
+            <ol class="fizzBuzzLayout">
+                @calculation
+            </ol>
+        }
+    </div>
 </div>

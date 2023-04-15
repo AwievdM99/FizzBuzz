@@ -15,6 +15,27 @@ namespace FizzBuzz.Controllers
 
         public IActionResult Index()
         {
+            List<string> fizzBuzzCalculationList = new List<string>();
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    fizzBuzzCalculationList.Add("FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    fizzBuzzCalculationList.Add("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    fizzBuzzCalculationList.Add("Buzz " + i);
+                }
+                else
+                {
+                    fizzBuzzCalculationList.Add(i.ToString());
+                }
+            }
+            ViewData["fizzBuzz"] = fizzBuzzCalculationList;
             return View();
         }
 
